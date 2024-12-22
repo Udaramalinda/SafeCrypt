@@ -1,4 +1,4 @@
-#include "ObliviousTransfer.h"
+#include "signatures/ObliviousTransfer.h"
 
 // Add method implementations here
 

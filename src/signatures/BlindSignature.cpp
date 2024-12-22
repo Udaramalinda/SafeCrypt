@@ -1,4 +1,4 @@
-#include "BlindSignature.h"
+#include "signatures/BlindSignature.h"
 
 // Add method implementations here
 
