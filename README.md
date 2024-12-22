@@ -116,18 +116,40 @@ The project is organized as follows:
 ```plaintext
 SafeCrypt/
 ├── include/                # Public headers
-│   ├── CryptoLib.h         # Main library header
 │   ├── signatures/         # Signature schemes headers
 │   └── utils/              # Utility headers
 ├── src/                    # Implementation files
 │   ├── signatures/         # Signature schemes implementations
 │   └── utils/              # Utility implementations
 ├── tests/                  # Unit and integration tests
-├── cmake/                  # CMake modules
 ├── CMakeLists.txt          # Top-level CMake file
-├── Makefile                # Makefile for building the library
 └── README.md               # Project documentation
 ```
+
+### Directory Breakdown
+
+#### `include/` (Public headers)
+Contains the header files for the library, exposing the public API.
+
+- **`signatures/`**: Contains header files for the different cryptographic signature schemes (e.g., Blind Signatures, Proxy Signatures, Group Signatures, etc.).
+- **`utils/`**: Contains utility headers for cryptographic functions like key generation and hashing.
+
+#### `src/` (Implementation files)
+Contains the implementation of the cryptographic signature schemes and utilities.
+
+- **`signatures/`**: Contains the implementation files for the cryptographic signature schemes defined in the `include/signatures/` folder.
+- **`utils/`**: Contains the implementation of utility functions (e.g., key pair generation, hashing, etc.).
+
+#### `tests/` (Unit and integration tests)
+Contains unit tests to verify the correctness and reliability of the cryptographic schemes and utilities.
+
+- This folder includes tests for each signature scheme and utility function, making it easier to ensure the correctness of the library.
+
+#### `CMakeLists.txt` (Top-level CMake file)
+This file is responsible for configuring the build system using CMake. It includes instructions on how to build the project, link dependencies, and configure the compiler flags.
+
+#### `README.md` (Project documentation)
+This file explains how to use, set up, and contribute to the `SafeCrypt` project.
 
 ### Code Style
 
